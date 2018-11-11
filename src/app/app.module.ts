@@ -6,6 +6,15 @@ import { AppRoutingModule } from './app-routing.module';
 import { CoreModule } from './core/core.module';
 import { SharedModule } from './shared/shared.module';
 import { ContactModule } from './contact/contact.module';
+import { HomeModule } from './home/home.module';
+// import { SiteNavComponent } from './site-nav/site-nav.component';
+// import { LayoutModule } from '@angular/cdk/layout';
+// import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule } from '@angular/material';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+
+
+
 
 @NgModule({
   declarations: [
@@ -13,9 +22,11 @@ import { ContactModule } from './contact/contact.module';
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,  
     CoreModule,
     SharedModule,
-    //ContactModule,
+    ContactModule,
+    HomeModule,
     AppRoutingModule
   ],
   providers: [],
